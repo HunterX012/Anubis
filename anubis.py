@@ -382,7 +382,7 @@ banner = f"""
 clear()
 print(water(banner), end="")
 while True:
-    file = input(purple("        [>] Enter the python file you wish to obfuscate [script.py] : ") + "\033[38;2;148;0;230m")
+    file = sys.argv[1]
     if not os.path.exists(file):
         print(red("        [!] Error : That file does not exist"), end="")
     else:
