@@ -394,7 +394,7 @@ junk = False
 bug = False
 
 while True:
-    ans = input(purple("        [>] AntiDebug [y/n] : ") + "\033[38;2;148;0;230m").lower()
+    ans = "y"
     if ans == "y":
         bug = True
         break
@@ -405,7 +405,7 @@ while True:
         print(red(f"        [!] Error : Invalid option [y/n]"), end="")
     
 while True:
-    ans = input(purple("        [>] Junk Code [y/n] : ") + "\033[38;2;148;0;230m").lower()
+    ans = "y"
     if ans == "y":
         junk = True
         break
@@ -416,7 +416,7 @@ while True:
         print(red(f"        [!] Error : Invalid option [y/n]"), end="")
 
 while True:
-    ans = input(purple("        [>] Rename Classes, Functions, Variables & Parameters [y/n] : ") + "\033[38;2;148;0;230m").lower()
+    ans = "y"
     if ans == "y":
         rename = True
         break
@@ -428,7 +428,7 @@ while True:
 
 if rename:
     while True:
-        ans = input(purple("        [>] Carbon (Offline) or Oxyry [c/o] : ") + "\033[38;2;148;0;230m").lower()
+        ans = "o"
         if ans == "c":
             carbonate = True
             break
@@ -440,7 +440,7 @@ if rename:
 
 
 while True:
-    ans = input(purple("        [>] One Line Obfuscation (Can't compile to exe) [y/n] : ") + "\033[38;2;148;0;230m").lower()
+    ans = "n"
     if ans == "y":
         extra = True
         break
@@ -478,7 +478,7 @@ print(blue(f"        [>] Code has been successfully obfuscated @ {name}"), end="
 if extra == False:
     compile = False
     while True:
-        ans = input(purple("        [>] Would you like to compile to an exe [y/n] : ") + "\033[38;2;148;0;230m").lower()
+        ans = "y"
         if ans == "y":
             compile = True
             break
