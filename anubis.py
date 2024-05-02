@@ -394,7 +394,7 @@ junk = False
 bug = False
 
 while True:
-    ans = "y"
+    ans = "n"
     if ans == "y":
         bug = True
         break
