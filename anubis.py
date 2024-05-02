@@ -478,7 +478,7 @@ print(blue(f"        [>] Code has been successfully obfuscated @ {name}"), end="
 if extra == False:
     compile = False
     while True:
-        ans = "n"
+        ans = "y"
         if ans == "y":
             compile = True
             break
